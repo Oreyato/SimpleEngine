@@ -1,0 +1,33 @@
+#pragma once
+#include <string>
+
+#include "RendererSDL.h"
+#include "RendererOGL.h"
+
+using std::string;
+
+class Texture
+{
+public:
+	Texture();
+	~Texture();
+
+	bool loadSDL(RendererSDL& rendererP, const string& filenameP);
+	bool loadOGL(RendererOGL& rendererP, const string& filenameP);
+	void unload();
+	inline SDL_Texture* toSDLTexture() const { return SDLTexture; }
+	void updateInfo(int& widthOut, int& heightOut);
+
+	void setActive() const;
+
+	inline int getWidth() const { return width; }
+	inline int getHeight() const { return height; }
+
+private:
+	string filename;
+	SDL_Texture* SDLTexture = nullptr;
+	int width;
+	int height;
+	unsigned int textureID; 
+};
+
