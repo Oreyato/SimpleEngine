@@ -5,7 +5,7 @@ constexpr float vertices[] = {
 	 0.5f,  0.5f, 0.f, 1.f, 0.f, // top right = 1
 	 0.5f, -0.5f, 0.f, 1.f, 1.f, // bottom right = 2
 	-0.5f, -0.5f, 0.f, 0.f, 1.f  // bottom left = 3
-					 // ^ UV -> needed to position textures
+					 // ^ UV -> textures positions
 };
 
 constexpr unsigned int indices[] = { // indices are corresponding to the = ... above
@@ -18,6 +18,8 @@ constexpr float spriteVertices[] = {
 	 0.5f,  0.5f, 0.f, 0.f, 0.f, 0.f, 1.f, 0.f, // top right
 	 0.5f, -0.5f, 0.f, 0.f, 0.f, 0.f, 1.f, 1.f, // bottom right
 	-0.5f, -0.5f, 0.f, 0.f, 0.f, 0.f, 0.f, 1.f  // bottom left
+					// ^ 3 floats between the xyz and uv coordinates
+					// corresponding to the normal datas
 };
 
 class VertexArray
