@@ -23,4 +23,5 @@
   Vector2.cpp
   Window.cpp
   Generating Code...
-  SimpleEngineWithOpenGL-004.vcxproj -> G:\Cours\Progra\C++\003\SDL_SimpleEngine_2\SimpleEngine\x64\Debug\SimpleEngineWithOpenGL-004.exe
+  LINK : G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\x64\Debug\SimpleEngineWithOpenGL-004.exe not found or not built by the last incremental link; performing full link
+  SimpleEngineWithOpenGL-004.vcxproj -> G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\x64\Debug\SimpleEngineWithOpenGL-004.exe

@@ -93,4 +93,5 @@ void Texture::updateInfo(int& widthOut, int& heightOut)
 
 void Texture::setActive() const
 {
+	glBindTexture(GL_TEXTURE_2D, textureID);
 }

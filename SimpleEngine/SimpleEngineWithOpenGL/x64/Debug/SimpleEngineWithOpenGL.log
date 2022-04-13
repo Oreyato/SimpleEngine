@@ -1,3 +1,35 @@
 ﻿G:\C++\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (SimpleEngineWithOpenGL-004.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Actor.cpp
+  AnimSpriteComponent.cpp
+  Assets.cpp
+  Astroid.cpp
+  BackgroundSpriteComponent.cpp
+  CircleCollisionComponent.cpp
+  Component.cpp
   Game.cpp
-  SimpleEngineWithOpenGL.vcxproj -> G:\Cours\Progra\C++\003\SimpleEngineYesTrustMe\SimpleEngine\x64\Debug\SimpleEngineWithOpenGL.exe
+  InputComponent.cpp
+  Laser.cpp
+  Log.cpp
+  Main.cpp
+  Matrix4.cpp
+  MoveComponent.cpp
+  Quaternion.cpp
+  Random.cpp
+  Rectangle.cpp
+  RendererOGL.cpp
+  RendererSDL.cpp
+  Shader.cpp
+  Generating Code...
+  Compiling...
+  Ship.cpp
+  SpriteComponent.cpp
+  Texture.cpp
+  Timer.cpp
+  Vector2.cpp
+  Vector3.cpp
+  VertexArray.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngineWithOpenGL\VertexArray.cpp(14,49): warning C4244: 'argument': conversion from 'double' to 'GLsizeiptr', possible loss of data
+  Window.cpp
+  Generating Code...
+  LINK : G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\x64\Debug\SimpleEngineWithOpenGL.exe not found or not built by the last incremental link; performing full link
+  SimpleEngineWithOpenGL.vcxproj -> G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\x64\Debug\SimpleEngineWithOpenGL.exe

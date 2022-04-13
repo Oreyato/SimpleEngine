@@ -93,12 +93,13 @@ Texture Assets::loadTextureFromFile(IRenderer& renderer, const string& filename)
 
 Shader Assets::loadShaderFromFile(const std::string& vShaderFile, const std::string& fShaderFile, const std::string& tcShaderFile, const std::string& teShaderFile, const std::string& gShaderFile)
 {
-    // 1. Retrieve the vertex/fragment source code from filePath
+    //v 1. Retrieve the vertex/fragment source code from filePath ====
     std::string vertexCode;
     std::string fragmentCode;
     std::string tcCode;
     std::string teCode;
     std::string geometryCode;
+
     try {
         // Open files
         std::ifstream vertexShaderFile(vShaderFile);
@@ -113,6 +114,7 @@ Shader Assets::loadShaderFromFile(const std::string& vShaderFile, const std::str
         // Convert stream into string
         vertexCode = vShaderStream.str();
         fragmentCode = fShaderStream.str();
+
         // If tess control shader path is present, also load a tess control shader
         if (tcShaderFile != "") {
             std::ifstream tessControlShaderFile(tcShaderFile);
@@ -150,17 +152,21 @@ Shader Assets::loadShaderFromFile(const std::string& vShaderFile, const std::str
             << std::endl;
         Log::error(LogCategory::Render, loadError.str());
     }
+    //^ 1. Retrieve the vertex/fragment source code from filePath ====
+    //v 2. Now create shader object from source code =================
     const GLchar* vShaderCode = vertexCode.c_str();
     const GLchar* fShaderCode = fragmentCode.c_str();
     const GLchar* tcShaderCode = tcCode.c_str();
     const GLchar* teShaderCode = teCode.c_str();
     const GLchar* gShaderCode = geometryCode.c_str();
-    // 2. Now create shader object from source code
+    
     Shader shader;
     shader.compile(vShaderCode, fShaderCode,
         tcShaderFile != "" ? tcShaderCode : nullptr,
         teShaderFile != "" ? teShaderCode : nullptr,
         gShaderFile != "" ? gShaderCode : nullptr);
+    //^ 2. Now create shader object from source code =================
+    
     return shader;
 }
 
