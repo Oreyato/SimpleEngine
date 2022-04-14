@@ -85,6 +85,12 @@
     <ClCompile Include="Assets.cpp">
       <Filter>Objects</Filter>
     </ClCompile>
+    <ClCompile Include="SoundEvent.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioSystem.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
@@ -179,6 +185,12 @@
     <ClInclude Include="DirectionalLight.h">
       <Filter>Render</Filter>
     </ClInclude>
+    <ClInclude Include="SoundEvent.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioSystem.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Maths+Logs">
@@ -209,6 +221,9 @@
     </Filter>
     <Filter Include="Objects\3D Objects">
       <UniqueIdentifier>{ec9c242c-9ff0-40f5-ac5b-1e789a5bbf93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{31f3bed2-c341-4a22-8781-ac835060c990}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -75,8 +75,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\..\SDL\SDL2-2.0.12\include;..\..\SDL\SDL2_image-2.0.5\include;..\..\SDL\SDL2_mixer-2.0.4\include;..\..\SDL\SDL2_ttf-2.0.15\include;..\..\SDL\rapidjson\include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\SDL\SDL2-2.0.12\lib\x64;..\..\SDL\SDL2_image-2.0.5\lib\x64;..\..\SDL\SDL2_mixer-2.0.4\lib\x64;..\..\SDL\SDL2_ttf-2.0.15\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\..\SDL\SDL2-2.0.12\include;..\..\SDL\SDL2_image-2.0.5\include;..\..\SDL\SDL2_mixer-2.0.4\include;..\..\SDL\SDL2_ttf-2.0.15\include;..\..\SDL\rapidjson\include;..\..\FmodApis\lowlevel\inc;..\..\FmodApis\studio\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\FmodApis\lowlevel\lib;..\..\FmodApis\studio\lib;..\..\SDL\SDL2_ttf-2.0.15\lib\x64;..\..\SDL\SDL2-2.0.12\lib\x64;..\..\SDL\SDL2_image-2.0.5\lib\x64;..\..\SDL\SDL2_mixer-2.0.4\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -102,13 +102,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\include;..\..\FmodApis\lowlevel\inc;..\..\FmodApis\studio\inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;opengl32.lib;glu32.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\SDL\glew-2.1.0\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;opengl32.lib;glu32.lib;glew32.lib;fmodstudioL_vc.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\FmodApis\studio\lib;..\..\FmodApis\lowlevel\lib;..\..\SDL\glew-2.1.0\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -147,6 +147,7 @@
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="AnimSpriteComponent.cpp" />
     <ClCompile Include="Assets.cpp" />
+    <ClCompile Include="AudioSystem.cpp" />
     <ClCompile Include="BackgroundSpriteComponent.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CircleCollisionComponent.cpp" />
@@ -166,6 +167,7 @@
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RendererOGL.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="SoundEvent.cpp" />
     <ClCompile Include="Sphere.cpp" />
     <ClCompile Include="SpriteComponent.cpp" />
     <ClCompile Include="Texture.cpp" />
@@ -179,6 +181,7 @@
     <ClInclude Include="Actor.h" />
     <ClInclude Include="AnimSpriteComponent.h" />
     <ClInclude Include="Assets.h" />
+    <ClInclude Include="AudioSystem.h" />
     <ClInclude Include="BackgroundSpriteComponent.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="CircleCollisionComponent.h" />
@@ -200,6 +203,7 @@
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="RendererOGL.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="SoundEvent.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="SpriteComponent.h" />
     <ClInclude Include="Texture.h" />
