@@ -19,6 +19,7 @@ void MeshComponent::draw(Shader& shader)
 	{
 		Matrix4 worldTr = owner.getWorldTransform();
 		shader.setMatrix4("uWorldTransform", worldTr);
+		shader.setFloat("uSpecPower", mesh->getSpecularPower());
 
 		// Texture infos are contained inside the mesh
 		Texture* tex = mesh->getTexture(textureIndex);

@@ -3,6 +3,7 @@
 class Sphere :
     public Actor
 {
+public:
     Sphere();
 };
 

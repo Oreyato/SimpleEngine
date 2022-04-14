@@ -184,6 +184,7 @@
     <ClInclude Include="CircleCollisionComponent.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="Cube.h" />
+    <ClInclude Include="DirectionalLight.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="InputComponent.h" />
     <ClInclude Include="IRenderer.h" />
@@ -211,6 +212,8 @@
   <ItemGroup>
     <None Include="BasicMesh.frag" />
     <None Include="BasicMesh.vert" />
+    <None Include="Phong.frag" />
+    <None Include="Phong.vert" />
     <None Include="Sprite.frag" />
     <None Include="Sprite.vert" />
   </ItemGroup>

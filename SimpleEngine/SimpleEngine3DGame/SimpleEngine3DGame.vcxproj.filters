@@ -176,6 +176,9 @@
     <ClInclude Include="Assets.h">
       <Filter>Objects</Filter>
     </ClInclude>
+    <ClInclude Include="DirectionalLight.h">
+      <Filter>Render</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Maths+Logs">
@@ -189,9 +192,11 @@
     </Filter>
     <Filter Include="Render\Shaders\Fragment">
       <UniqueIdentifier>{38347243-ca76-47de-b84f-0dc04fc2d443}</UniqueIdentifier>
+      <Extensions>frag</Extensions>
     </Filter>
     <Filter Include="Render\Shaders\Vertex">
       <UniqueIdentifier>{4e765aaf-7894-4bd7-8ce9-48746189373a}</UniqueIdentifier>
+      <Extensions>vert</Extensions>
     </Filter>
     <Filter Include="Objects">
       <UniqueIdentifier>{39812292-6916-46a9-a277-615d83ad82bc}</UniqueIdentifier>
@@ -217,6 +222,12 @@
       <Filter>Render\Shaders\Vertex</Filter>
     </None>
     <None Include="BasicMesh.frag">
+      <Filter>Render\Shaders\Fragment</Filter>
+    </None>
+    <None Include="Phong.vert">
+      <Filter>Render\Shaders\Vertex</Filter>
+    </None>
+    <None Include="Phong.frag">
       <Filter>Render\Shaders\Fragment</Filter>
     </None>
   </ItemGroup>

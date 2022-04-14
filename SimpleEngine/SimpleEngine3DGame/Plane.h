@@ -3,6 +3,7 @@
 class Plane :
     public Actor
 {
+public:
     Plane();
 };
 

@@ -11,13 +11,15 @@
 #include <SDL_image.h>
 
 RendererOGL::RendererOGL() :
-	window(nullptr),
-	context(nullptr),
-	spriteVertexArray(nullptr),
-	spriteViewProj(Matrix4::createSimpleViewProj(WINDOW_WIDTH, WINDOW_HEIGHT)),
-	view(Matrix4::createLookAt(Vector3::zero, Vector3::unitX, Vector3::unitZ)), // By default, the camera looks forward. This view matrix will be changed by the camera
-	projection(Matrix4::createPerspectiveFOV(Maths::toRadians(70.0f), WINDOW_WIDTH, WINDOW_HEIGHT, 25.0f, 10000.0f))
+	window{ nullptr },
+	context{ nullptr },
+	spriteVertexArray{ nullptr },
+	spriteViewProj{ Matrix4::createSimpleViewProj(WINDOW_WIDTH, WINDOW_HEIGHT) },
+	view{ Matrix4::createLookAt(Vector3::zero, Vector3::unitX, Vector3::unitZ) }, // By default, the camera looks forward. This view matrix will be changed by the camera
+	projection{ Matrix4::createPerspectiveFOV(Maths::toRadians(70.0f), WINDOW_WIDTH, WINDOW_HEIGHT, 25.0f, 10000.0f) },
 					  //^ creates the camera frustrum
+	ambientLight{ Vector3(1.0f, 1.0, 1.0f) },
+	dirLight{ Vector3::zero, Vector3::zero, Vector3::zero } /// <---
 {
 }
 
@@ -82,7 +84,7 @@ void RendererOGL::beginDraw()
 void RendererOGL::draw()
 {
 	drawMeshes();
-	//drawSprites();
+	drawSprites();
 }
 
 void RendererOGL::drawSprite(const Actor& actor, const Texture& tex, Rectangle srcRect, Vector2 origin, Flip flip) const
@@ -142,17 +144,41 @@ void RendererOGL::removeSprite(SpriteComponent* sprite)
 	sprites.erase(iter);
 }
 
+void RendererOGL::setLightUniforms(Shader& shader)
+{
+	// Camera position is from inverted view
+	Matrix4 invertedView = view;
+	invertedView.invert();
+	shader.setVector3f("uCameraPos", invertedView.getTranslation());
+	// Ambient
+	shader.setVector3f("uAmbientLight", ambientLight);
+	// Directional light
+	shader.setVector3f("uDirLight.direction", dirLight.direction);
+	shader.setVector3f("uDirLight.diffuseColor", dirLight.diffuseColor);
+	shader.setVector3f("uDirLight.specColor", dirLight.specColor);
+
+}
+
+void RendererOGL::setAmbientLight(const Vector3& ambientP)
+{
+	ambientLight = ambientP;
+}
+
 void RendererOGL::drawMeshes()
 {
 	// Enable depth buffering/disable alpha blend
 	glEnable(GL_DEPTH_TEST);
 	glDisable(GL_BLEND);
-	Assets::getShader("BasicMesh").use();
+	Shader& shader = Assets::getShader("Phong");
+	shader.use();
 	// Update view-projection matrix
-	Assets::getShader("BasicMesh").setMatrix4("uViewProj", view * projection);
+	shader.setMatrix4("uViewProj", view * projection);
+	// Lights
+	setLightUniforms(shader);
+	// Draw
 	for (auto mc : meshes)
 	{
-		mc->draw(Assets::getShader("BasicMesh"));
+		mc->draw(Assets::getShader("Phong"));
 	}
 }
 

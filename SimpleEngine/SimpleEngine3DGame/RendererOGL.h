@@ -3,6 +3,7 @@
 #include "VertexArray.h"
 #include "Vector2.h"
 #include "Shader.h"
+#include "DirectionalLight.h"
 
 #include <vector>
 
@@ -32,6 +33,11 @@ public:
 	void close();
 	IRenderer::Type type() { return Type::OGL; }
 
+	DirectionalLight& getDirectionalLight() { return dirLight; }
+
+	void setLightUniforms(Shader& shader);
+	void setAmbientLight(const Vector3& ambientP);
+
 private:
 	void drawMeshes();
 	void drawSprites();
@@ -45,4 +51,7 @@ private:
 
 	std::vector<class MeshComponent*> meshes;
 	std::vector<class SpriteComponent*> sprites;
+
+	Vector3 ambientLight;
+	DirectionalLight dirLight;
 };
