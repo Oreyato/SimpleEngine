@@ -147,6 +147,7 @@
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="AnimSpriteComponent.cpp" />
     <ClCompile Include="Assets.cpp" />
+    <ClCompile Include="AudioComponent.cpp" />
     <ClCompile Include="AudioSystem.cpp" />
     <ClCompile Include="BackgroundSpriteComponent.cpp" />
     <ClCompile Include="Camera.cpp" />
@@ -181,6 +182,7 @@
     <ClInclude Include="Actor.h" />
     <ClInclude Include="AnimSpriteComponent.h" />
     <ClInclude Include="Assets.h" />
+    <ClInclude Include="AudioComponent.h" />
     <ClInclude Include="AudioSystem.h" />
     <ClInclude Include="BackgroundSpriteComponent.h" />
     <ClInclude Include="Camera.h" />

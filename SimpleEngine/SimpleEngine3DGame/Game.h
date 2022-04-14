@@ -6,6 +6,7 @@
 #include "Vector2.h"
 #include "RendererOGL.h"
 #include "Camera.h"
+#include "AudioSystem.h"
 
 using std::vector;
 
@@ -35,7 +36,9 @@ public:
 
 	void addActor(Actor* actor);
 	void removeActor(Actor* actor);
+
 	RendererOGL& getRenderer() { return renderer; }
+	AudioSystem& getAudioSystem() { return audioSystem; }
 
 private:
 	void processInput();
@@ -50,4 +53,6 @@ private:
 	bool isUpdatingActors;
 	vector<Actor*> actors;
 	vector<Actor*> pendingActors;
+
+	AudioSystem audioSystem;
 };

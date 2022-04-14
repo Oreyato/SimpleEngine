@@ -11,6 +11,7 @@ bool Game::initialize()
 {
 	bool isWindowInit = window.initialize();
 	bool isRendererInit = renderer.initialize(window);
+	bool isAudioInit = audioSystem.initialize();
 	return isWindowInit && isRendererInit; // Return bool && bool && bool ...to detect error
 }
 
@@ -143,7 +144,7 @@ void Game::processInput()
 
 void Game::update(float dt)
 {
-	// Update actors 
+	//v Update actors ================================================
 	isUpdatingActors = true;
 	for (auto actor : actors)
 	{
@@ -172,6 +173,10 @@ void Game::update(float dt)
 	{
 		delete deadActor;
 	}
+	//^ Update actors ================================================
+	//v Update audio =================================================
+	audioSystem.update(dt);
+	//^ Update audio =================================================
 }
 
 void Game::render()
