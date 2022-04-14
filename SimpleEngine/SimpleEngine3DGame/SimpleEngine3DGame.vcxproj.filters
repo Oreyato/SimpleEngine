@@ -5,13 +5,13 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="Actor.cpp">
-      <Filter>Actors</Filter>
+      <Filter>Objects\Actors</Filter>
     </ClCompile>
     <ClCompile Include="Component.cpp">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClCompile>
     <ClCompile Include="MoveComponent.cpp">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClCompile>
     <ClCompile Include="Log.cpp">
       <Filter>Maths+Logs</Filter>
@@ -26,27 +26,25 @@
       <Filter>Maths+Logs</Filter>
     </ClCompile>
     <ClCompile Include="SpriteComponent.cpp">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClCompile>
     <ClCompile Include="AnimSpriteComponent.cpp">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClCompile>
     <ClCompile Include="BackgroundSpriteComponent.cpp">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClCompile>
     <ClCompile Include="Rectangle.cpp">
       <Filter>Maths+Logs</Filter>
     </ClCompile>
     <ClCompile Include="InputComponent.cpp">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClCompile>
     <ClCompile Include="CircleCollisionComponent.cpp">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClCompile>
-    <ClCompile Include="VertexArray.cpp" />
-    <ClCompile Include="RendererOGL.cpp" />
     <ClCompile Include="Shader.cpp">
-      <Filter>Shaders</Filter>
+      <Filter>Render\Shaders</Filter>
     </ClCompile>
     <ClCompile Include="Vector3.cpp">
       <Filter>Maths+Logs</Filter>
@@ -57,27 +55,48 @@
     <ClCompile Include="Quaternion.cpp">
       <Filter>Maths+Logs</Filter>
     </ClCompile>
-    <ClCompile Include="Assets.cpp" />
-    <ClCompile Include="Mesh.cpp" />
-    <ClCompile Include="Texture.cpp" />
     <ClCompile Include="MeshComponent.cpp">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
-      <Filter>Actors</Filter>
+      <Filter>Objects\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>Objects\3D Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Objects\3D Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Objects\3D Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexArray.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="RendererOGL.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets.cpp">
+      <Filter>Objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="Actor.h">
-      <Filter>Actors</Filter>
+      <Filter>Objects\Actors</Filter>
     </ClInclude>
     <ClInclude Include="Component.h">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClInclude>
     <ClInclude Include="MoveComponent.h">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClInclude>
     <ClInclude Include="Log.h">
       <Filter>Maths+Logs</Filter>
@@ -95,28 +114,25 @@
       <Filter>Maths+Logs</Filter>
     </ClInclude>
     <ClInclude Include="SpriteComponent.h">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClInclude>
     <ClInclude Include="AnimSpriteComponent.h">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClInclude>
     <ClInclude Include="BackgroundSpriteComponent.h">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClInclude>
     <ClInclude Include="Rectangle.h">
       <Filter>Maths+Logs</Filter>
     </ClInclude>
     <ClInclude Include="InputComponent.h">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClInclude>
     <ClInclude Include="CircleCollisionComponent.h">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClInclude>
-    <ClInclude Include="IRenderer.h" />
-    <ClInclude Include="VertexArray.h" />
-    <ClInclude Include="RendererOGL.h" />
     <ClInclude Include="Shader.h">
-      <Filter>Shaders</Filter>
+      <Filter>Render\Shaders</Filter>
     </ClInclude>
     <ClInclude Include="Vector3.h">
       <Filter>Maths+Logs</Filter>
@@ -127,48 +143,81 @@
     <ClInclude Include="Quaternion.h">
       <Filter>Maths+Logs</Filter>
     </ClInclude>
-    <ClInclude Include="Assets.h" />
-    <ClInclude Include="Mesh.h" />
-    <ClInclude Include="Texture.h" />
     <ClInclude Include="MeshComponent.h">
-      <Filter>Components</Filter>
+      <Filter>Objects\Components</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
-      <Filter>Actors</Filter>
+      <Filter>Objects\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Objects\3D Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Objects\3D Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Objects\3D Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexArray.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererOGL.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderer.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets.h">
+      <Filter>Objects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Actors">
-      <UniqueIdentifier>{4fce88f6-c71c-45f6-9c67-f292d112b08c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Components">
-      <UniqueIdentifier>{4760361a-2841-456c-9759-52b830cc8ac6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shaders">
-      <UniqueIdentifier>{2d5eaae0-5351-4257-96fb-e35eaa585074}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shaders\Fragment">
-      <UniqueIdentifier>{38347243-ca76-47de-b84f-0dc04fc2d443}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shaders\Vertex">
-      <UniqueIdentifier>{4e765aaf-7894-4bd7-8ce9-48746189373a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Maths+Logs">
       <UniqueIdentifier>{4321da52-f239-4a2c-a972-ee87af87b207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{51f3e958-5737-4018-ac84-b015e573ab72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\Shaders">
+      <UniqueIdentifier>{2d5eaae0-5351-4257-96fb-e35eaa585074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\Shaders\Fragment">
+      <UniqueIdentifier>{38347243-ca76-47de-b84f-0dc04fc2d443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\Shaders\Vertex">
+      <UniqueIdentifier>{4e765aaf-7894-4bd7-8ce9-48746189373a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{39812292-6916-46a9-a277-615d83ad82bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Actors">
+      <UniqueIdentifier>{4fce88f6-c71c-45f6-9c67-f292d112b08c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Components">
+      <UniqueIdentifier>{4760361a-2841-456c-9759-52b830cc8ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\3D Objects">
+      <UniqueIdentifier>{ec9c242c-9ff0-40f5-ac5b-1e789a5bbf93}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Sprite.frag">
-      <Filter>Shaders\Fragment</Filter>
+      <Filter>Render\Shaders\Fragment</Filter>
     </None>
     <None Include="Sprite.vert">
-      <Filter>Shaders\Vertex</Filter>
+      <Filter>Render\Shaders\Vertex</Filter>
     </None>
     <None Include="BasicMesh.vert">
-      <Filter>Shaders\Vertex</Filter>
+      <Filter>Render\Shaders\Vertex</Filter>
     </None>
     <None Include="BasicMesh.frag">
-      <Filter>Shaders\Fragment</Filter>
+      <Filter>Render\Shaders\Fragment</Filter>
     </None>
   </ItemGroup>
 </Project>
