@@ -17,12 +17,14 @@ void MeshComponent::draw(Shader& shader)
 {
 	if (mesh)
 	{
-		Matrix4 wt = owner.getWorldTransform();
-		shader.setMatrix4("uWorldTransform", wt);
-		Texture* t = mesh->getTexture(textureIndex);
-		if (t)
+		Matrix4 worldTr = owner.getWorldTransform();
+		shader.setMatrix4("uWorldTransform", worldTr);
+
+		// Texture infos are contained inside the mesh
+		Texture* tex = mesh->getTexture(textureIndex);
+		if (tex)
 		{
-			t->setActive();
+			tex->setActive();
 		}
 		VertexArray* va = mesh->getVertexArray();
 		va->setActive();
