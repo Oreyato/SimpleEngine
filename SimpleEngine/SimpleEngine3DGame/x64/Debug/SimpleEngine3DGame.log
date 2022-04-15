@@ -1,1 +1,11 @@
-﻿  SimpleEngine3DGame.vcxproj -> G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\x64\Debug\SimpleEngine3DGame.exe
+﻿  Actor.cpp
+  AudioComponent.cpp
+  AudioSystem.cpp
+  Camera.cpp
+  Game.cpp
+  Main.cpp
+  MeshComponent.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\MeshComponent.cpp(25,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  SpriteComponent.cpp
+  Generating Code...
+  SimpleEngine3DGame.vcxproj -> G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\x64\Debug\SimpleEngine3DGame.exe

@@ -111,6 +111,18 @@ void Game::load()
 	sc = new SpriteComponent(ui, Assets::getTexture("Radar"));
 	
 	//^ UI ===========================================================
+	//v Audio ========================================================
+	// Create spheres with audio components playing different sounds
+	Sphere* soundSphere = new Sphere();
+	soundSphere->setPosition(Vector3(500.0f, -75.0f, 0.0f));
+	soundSphere->setScale(1.0f);
+	AudioComponent* ac = new AudioComponent(soundSphere);
+	ac->playEvent("event:/FireLoop");
+
+	// Start music
+	musicEvent = audioSystem.playEvent("event:/Music");
+
+	//^ Audio ========================================================
 }
 
 void Game::processInput()
@@ -124,7 +136,12 @@ void Game::processInput()
 		case SDL_QUIT:
 			isRunning = false;
 			break;
-		}
+		case SDL_KEYDOWN:
+			if (!event.key.repeat) {
+				audioInput(event.key.keysym.sym);
+			}
+			break;
+		}	
 	}
 	// Keyboard state
 	const Uint8* keyboardState = SDL_GetKeyboardState(nullptr);
@@ -186,6 +203,59 @@ void Game::render()
 	renderer.beginDraw();
 	renderer.draw();
 	renderer.endDraw();
+}
+
+void Game::audioInput(int key)
+{
+	switch (key)
+	{
+	case '1':
+		// Set default footstep surface
+		camera->setFootstepSurface(0.0f);
+		break;
+	case '2':
+		// Set grass footstep surface
+		camera->setFootstepSurface(0.5f);
+		break;
+	case '3':
+	{
+		// Reduce master volume
+		float volume = audioSystem.getBusVolume("bus:/");
+		volume = Maths::max(0.0f, volume - 0.1f);
+		audioSystem.setBusVolume("bus:/", volume);
+		break;
+	}
+	case '4':
+	{
+		// Increase master volume
+		float volume = audioSystem.getBusVolume("bus:/");
+		volume = Maths::min(1.0f, volume + 0.1f);
+		audioSystem.setBusVolume("bus:/", volume);
+		break;
+	}
+	case '5':
+		// Stop or start reverb snapshot
+		if (!reverbSnap.isValid())
+		{
+			reverbSnap = audioSystem.playEvent("snapshot:/WithReverb");
+		}
+		else
+		{
+			reverbSnap.stop();
+		}
+		break;
+	case '6':
+		// Toggle music pause state
+		musicEvent.setPaused(!musicEvent.getPaused());
+		break;
+	case '7':
+		// Play explosion
+		audioSystem.playEvent("event:/Explosion2D");
+		break;
+
+	default:
+		break;
+	}
 }
 
 void Game::loop()

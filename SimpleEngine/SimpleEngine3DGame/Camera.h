@@ -1,5 +1,7 @@
 #pragma once
 #include "Actor.h"
+#include "AudioComponent.h"
+
 class Camera :
     public Actor
 {
@@ -8,7 +10,14 @@ public:
 
 	void updateActor(float deltaTime) override;
 	void actorInput(const Uint8* keys) override;
+
+	void setFootstepSurface(float value);
+
 private:
 	class MoveComponent* moveComponent;
+	class AudioComponent* audioComponent;
+
+	SoundEvent footstep;
+	float lastFootStep;
 };
 

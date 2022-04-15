@@ -55,4 +55,7 @@ private:
 	vector<Actor*> pendingActors;
 
 	AudioSystem audioSystem;
+	SoundEvent musicEvent;
+	SoundEvent reverbSnap;
+	void audioInput(int key);
 };
