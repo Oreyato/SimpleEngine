@@ -1,0 +1,64 @@
+﻿  Actor.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Actor.h(4,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  AnimSpriteComponent.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Component.h(2,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  Assets.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Assets.cpp(4,10): fatal error C1083: Cannot open include file: 'rapidjson/document.h': No such file or directory
+  AudioComponent.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Component.h(2,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  AudioSystem.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Log.h(4,10): fatal error C1083: Cannot open include file: 'SDL_log.h': No such file or directory
+  BackgroundSpriteComponent.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Component.h(2,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  Camera.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Actor.h(4,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  CircleCollisionComponent.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Component.h(2,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  Component.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Component.h(2,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  Cube.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Actor.h(4,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  Game.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Actor.h(4,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  InputComponent.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Component.h(2,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  Log.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Log.h(4,10): fatal error C1083: Cannot open include file: 'SDL_log.h': No such file or directory
+  Main.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Actor.h(4,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  Matrix4.cpp
+  Mesh.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Window.h(2,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  MeshComponent.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Component.h(2,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  MoveComponent.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Component.h(2,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  Plane.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Actor.h(4,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  Quaternion.cpp
+  Generating Code...
+  Compiling...
+  Random.cpp
+  Rectangle.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Rectangle.h(2,10): fatal error C1083: Cannot open include file: 'SDL_rect.h': No such file or directory
+  RendererOGL.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Window.h(2,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Shader.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Log.h(4,10): fatal error C1083: Cannot open include file: 'SDL_log.h': No such file or directory
+  SoundEvent.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\SoundEvent.cpp(11,10): fatal error C1083: Cannot open include file: 'fmod_studio.hpp': No such file or directory
+  Sphere.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Actor.h(4,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  SpriteComponent.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Component.h(2,10): fatal error C1083: Cannot open include file: 'SDL_stdinc.h': No such file or directory
+  Texture.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Window.h(2,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Timer.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Timer.cpp(2,10): fatal error C1083: Cannot open include file: 'SDL_timer.h': No such file or directory
+  Vector2.cpp
+  Vector3.cpp
+  VertexArray.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\VertexArray.cpp(14,49): warning C4244: 'argument': conversion from 'double' to 'GLsizeiptr', possible loss of data
+  Window.cpp
+G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\Window.h(2,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Generating Code...

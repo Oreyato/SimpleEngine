@@ -1,0 +1,1284 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'SDL_bool' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/SDL/SDL2-2.0.12/include/SDL_rect.h"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "SDL_PointInRect",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30133.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "G:\\C++\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\c1xx.dll -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00D1C1B0 -il C:\\Users\\paulc\\AppData\\Local\\Temp\\_CL_bccd37f2ast -typedil -f Sphere.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930133 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I G:\\Cours\\Progra\\C++\\003\\SimpleEngine\\include -I G:\\Cours\\Progra\\C++\\003\\SimpleEngine\\FmodApis\\lowlevel\\inc -I G:\\Cours\\Progra\\C++\\003\\SimpleEngine\\FmodApis\\studio\\inc -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -Fox64\\Debug\\Sphere.obj -Fdx64\\Debug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory G:\\Cours\\Progra\\C++\\003\\SimpleEngine\\SimpleEngine\\SimpleEngine3DGame -analyze:rulesetdirectory ;G:\\C++\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset G:\\C++\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin G:\\C++\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I G:\\Cours\\Progra\\C++\\003\\SimpleEngine\\SDL\\SDL2-2.0.12\\include -I G:\\Cours\\Progra\\C++\\003\\SimpleEngine\\SDL\\SDL2_image-2.0.5\\include -I G:\\Cours\\Progra\\C++\\003\\SimpleEngine\\SDL\\SDL2_mixer-2.0.4\\include -I G:\\Cours\\Progra\\C++\\003\\SimpleEngine\\SDL\\SDL2_ttf-2.0.15\\include -I G:\\Cours\\Progra\\C++\\003\\SimpleEngine\\SDL\\rapidjson\\include -I G:\\Cours\\Progra\\C++\\003\\SimpleEngine\\FmodApis\\lowlevel\\inc -I G:\\Cours\\Progra\\C++\\003\\SimpleEngine\\FmodApis\\studio\\inc -I G:\\C++\\VC\\Tools\\MSVC\\14.29.30133\\include -I G:\\C++\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I G:\\C++\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -external:I G:\\C++\\VC\\Tools\\MSVC\\14.29.30133\\include -I G:\\C++\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I G:\\C++\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I G:\\C++\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I G:\\C++\\VC\\Auxiliary\\VS\\include -I G:\\C++\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/quaternion.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "ff6ba55f2905edd8b81408a471128488"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/quaternion.h"
+          },
+          "hashes": {
+            "md5": "9cecda85d1e4f2f88a7bde98c53b90c9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/vector3.h"
+          },
+          "hashes": {
+            "md5": "a0719a5da32fae8b852de8dd779c61e6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/maths.h"
+          },
+          "hashes": {
+            "md5": "a31fa2314fb5fb477ca3d5ac8c404413"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/SDL/SDL2-2.0.12/include/SDL_rect.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "4ed07404246e6a822430fb079a725a93"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/plane.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "e5d7a686feda1f332acee8bf6e4ac16b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/plane.h"
+          },
+          "hashes": {
+            "md5": "a98e728f14ba4fe96a50325ab25288e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/actor.h"
+          },
+          "hashes": {
+            "md5": "309c1175706afb2196793b05ed262bdd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/vector2.h"
+          },
+          "hashes": {
+            "md5": "2f2d17064b85aee44b101ff52fb8ed48"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_stdinc.h"
+          },
+          "hashes": {
+            "md5": "8e36daa7623a6459eb909ec6b6ba5da0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_config.h"
+          },
+          "hashes": {
+            "md5": "fc84ad13a484ae3be3b8b370d01f4a02"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_platform.h"
+          },
+          "hashes": {
+            "md5": "2fcc739339664bf01441c66cb9cc92a4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/begin_code.h"
+          },
+          "hashes": {
+            "md5": "4b027caecf76fadefe9a7e8173a1be23"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/close_code.h"
+          },
+          "hashes": {
+            "md5": "8ae353fd23284be963d9c973e5a5b9dd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/matrix4.h"
+          },
+          "hashes": {
+            "md5": "8ce50debed4330dcb86223704d1bec83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/meshcomponent.h"
+          },
+          "hashes": {
+            "md5": "e87dddfacab4842c692784b046b0ddd8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/component.h"
+          },
+          "hashes": {
+            "md5": "d7d2a25e4171dc78e70c9ccdfcd9379f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/assets.h"
+          },
+          "hashes": {
+            "md5": "5abb75bf0aa73ffd3982d81eb5b709f3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/texture.h"
+          },
+          "hashes": {
+            "md5": "a6b016af7e6858bb08865837f7883d1b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/renderersdl.h"
+          },
+          "hashes": {
+            "md5": "337793bd4f7fe855888ae2f8b5de8cf5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/irenderer.h"
+          },
+          "hashes": {
+            "md5": "e38303a5aaedc6cd6473237362916bea"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/window.h"
+          },
+          "hashes": {
+            "md5": "62122270a865a655fcee9f84a772f96c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl.h"
+          },
+          "hashes": {
+            "md5": "44129a5f3967cfb16055c683ddfe24a0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_main.h"
+          },
+          "hashes": {
+            "md5": "8fb43228852648e21c0dee3148a8f5c8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_assert.h"
+          },
+          "hashes": {
+            "md5": "92274f46390f0ebc4918177a9a7d527f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_atomic.h"
+          },
+          "hashes": {
+            "md5": "71a5f0a57a60acfd61cb7b575671a116"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_audio.h"
+          },
+          "hashes": {
+            "md5": "99bf65b26b79acf20dc0a906b89f35b5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_error.h"
+          },
+          "hashes": {
+            "md5": "ed11b22bc29ab4b91f79a52f2ee23210"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_endian.h"
+          },
+          "hashes": {
+            "md5": "4597e0dc649384cf642bc30c6ec90d21"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_mutex.h"
+          },
+          "hashes": {
+            "md5": "60dba2234a731f7a9704a837e73c5129"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_thread.h"
+          },
+          "hashes": {
+            "md5": "0e9429811d4ed01ac4721b46126b5557"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_rwops.h"
+          },
+          "hashes": {
+            "md5": "5ad8f401e954652d808ccde6fc70c690"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_clipboard.h"
+          },
+          "hashes": {
+            "md5": "826e3ca697abb4bd52a11378f53cab86"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_cpuinfo.h"
+          },
+          "hashes": {
+            "md5": "321375318e9cdd669d0632c809b27373"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_events.h"
+          },
+          "hashes": {
+            "md5": "475978217664a65db2507ec07066a532"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_video.h"
+          },
+          "hashes": {
+            "md5": "d6f63080a06f0111addac3e9939b2195"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_pixels.h"
+          },
+          "hashes": {
+            "md5": "b238bc9ac6c11d6093deac864b87590c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_surface.h"
+          },
+          "hashes": {
+            "md5": "7aba1afb02e00749efeb585e40cfdd56"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_blendmode.h"
+          },
+          "hashes": {
+            "md5": "79673536dda82ff11e0b56c8160c1ccc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_keyboard.h"
+          },
+          "hashes": {
+            "md5": "40d7f66cc7442ec4261a8018f1f56ddd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_keycode.h"
+          },
+          "hashes": {
+            "md5": "7c273f28c03fef3a10eadf7e8369002a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_scancode.h"
+          },
+          "hashes": {
+            "md5": "679cae56b1366916d74ec693927643b7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_mouse.h"
+          },
+          "hashes": {
+            "md5": "db2f644f49cc7bb8ee592ee94b5f2a8c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_joystick.h"
+          },
+          "hashes": {
+            "md5": "467b09a719a50e5cee60fbba04d276b1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_gamecontroller.h"
+          },
+          "hashes": {
+            "md5": "cac18c5e9dc8e6bee5223f22729e8a4c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_quit.h"
+          },
+          "hashes": {
+            "md5": "52aafad22d8becd329915b98110d4f88"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_gesture.h"
+          },
+          "hashes": {
+            "md5": "4924dca01ac1ff9c41d28e792bdb6875"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_touch.h"
+          },
+          "hashes": {
+            "md5": "88850ae5360e104a88996cfe270fd7c0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_filesystem.h"
+          },
+          "hashes": {
+            "md5": "d6a38619c1d5f8c061ef2d878f05798b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_haptic.h"
+          },
+          "hashes": {
+            "md5": "55b88822a2f3dda9546c11e5626c3748"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_hints.h"
+          },
+          "hashes": {
+            "md5": "dc786f1817dcf278cad098f722af3b7d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_loadso.h"
+          },
+          "hashes": {
+            "md5": "8d2a34119142debfa6b574c605721d3b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_log.h"
+          },
+          "hashes": {
+            "md5": "723c32c43ea477f97bce5fd022a497a4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_messagebox.h"
+          },
+          "hashes": {
+            "md5": "f37d7c9a8bc8a01a9456826ae6ed9002"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_metal.h"
+          },
+          "hashes": {
+            "md5": "77b2eed87e7752b0a14d2597b023e572"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_power.h"
+          },
+          "hashes": {
+            "md5": "5a9e6f685f246891de315d350e3db02a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_render.h"
+          },
+          "hashes": {
+            "md5": "ac83236728ba4717828048e8cd163024"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_sensor.h"
+          },
+          "hashes": {
+            "md5": "4c46840e2dfcd746c79a1df11d95dbb4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_shape.h"
+          },
+          "hashes": {
+            "md5": "1a43cf5044728b67fb81caac513fea11"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_system.h"
+          },
+          "hashes": {
+            "md5": "7c4d1f5da2006ef04df7951829eb8a42"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_timer.h"
+          },
+          "hashes": {
+            "md5": "bd65a90dee35fd50f80a7455f409ee40"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2-2.0.12/include/sdl_version.h"
+          },
+          "hashes": {
+            "md5": "a681822ce6bc1a5026fa592a08b559cc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/rectangle.h"
+          },
+          "hashes": {
+            "md5": "f03d1e802c364b03e5bb39cfa2f881cb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/rendererogl.h"
+          },
+          "hashes": {
+            "md5": "5b72f52fdd38f1dacae50071f7f555f5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/vertexarray.h"
+          },
+          "hashes": {
+            "md5": "34feec7d91f2b3ac2be4857116ce015f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/shader.h"
+          },
+          "hashes": {
+            "md5": "d84bc0fba3321f4595b08a61f7af53e9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/gl/glew.h"
+          },
+          "hashes": {
+            "md5": "ed03b570ce4f82b44f8f05414b55d9a9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/directionallight.h"
+          },
+          "hashes": {
+            "md5": "0bb8607bafde7a28eb44e65f6fc67d04"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/mesh.h"
+          },
+          "hashes": {
+            "md5": "18004472f012c4ef1a097cd7b98a061b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/movecomponent.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "9597be7aa8b7fc4d1a8af96b65da46e1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/movecomponent.h"
+          },
+          "hashes": {
+            "md5": "9e6c0ec1e7d60dd2144ffb4529003ee4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/meshcomponent.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "a2e14e95044c4554b4ec8bbf82108b5c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/game.h"
+          },
+          "hashes": {
+            "md5": "2fa190bc5c8ac0417510571da394df74"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/spritecomponent.h"
+          },
+          "hashes": {
+            "md5": "2b39f498e94379fb18dc8bab9bbce32a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/camera.h"
+          },
+          "hashes": {
+            "md5": "583cc2e23ad40a3a8081e38d88eef1de"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/audiosystem.h"
+          },
+          "hashes": {
+            "md5": "b4edbdffda98010887e60c722b7f77c0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/soundevent.h"
+          },
+          "hashes": {
+            "md5": "ebf1d64cbf187c13c539224c52d0cfc9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/mesh.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "e2a63e908d04907e385a1ade36bbe299"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/matrix4.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "cd57627d4dbf3ad552c4dbb90ac1c992"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "6ec02144f038bafde752e3d00f4d1d29"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/log.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "fc20f7e1c7324cda0066c000a7059cba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/log.h"
+          },
+          "hashes": {
+            "md5": "3973673ccfa93ea5b085a28bfa57d4d3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/inputcomponent.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "7e680ceb4bee4bd8c9507f07904b2b63"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/inputcomponent.h"
+          },
+          "hashes": {
+            "md5": "117ca8d9788b4b27763aa2b719af8aa6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/game.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "5731ab35a660eb80f23d55fc44a09fcb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/timer.h"
+          },
+          "hashes": {
+            "md5": "995b92d94a3e2b3d2d52da1baf46ecbf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/cube.h"
+          },
+          "hashes": {
+            "md5": "499db7a6edd253da6b05c42ce5a9943a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/sphere.h"
+          },
+          "hashes": {
+            "md5": "e060c9a366e98e32575566a6f5adb27b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/cube.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "40d1aec82f531208e86f108d504021cf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/component.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "da47bda021fa21d3b7f5ddf1a177f6e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/circlecollisioncomponent.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "781ffbdae863ebc018ef85322bf7b093"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/circlecollisioncomponent.h"
+          },
+          "hashes": {
+            "md5": "d6c8669f4c38b4530a175c165e3e3cca"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/camera.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "ef677dff8b9c2f25e2c03ee0a801784c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/backgroundspritecomponent.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "e194abab2f3c2c3990090f46d19e9744"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/backgroundspritecomponent.h"
+          },
+          "hashes": {
+            "md5": "f3104578807bd38f996313c2e8ae2ab7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/FmodApis/lowlevel/inc/fmod.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "2d94567589ffb09e32264eba4405f7b8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/SimpleEngine/SimpleEngine3DGame/AudioSystem.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "937bfaa1e19550dd9cbfae1e9bf82baa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/fmodapis/studio/inc/fmod_studio.hpp"
+          },
+          "hashes": {
+            "md5": "104d5102c9b74b379734d4db9433b514"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/fmodapis/studio/inc/fmod_studio_common.h"
+          },
+          "hashes": {
+            "md5": "625f1ffc48aea7b6981e06b370e9af9f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/fmodapis/lowlevel/inc/fmod.h"
+          },
+          "hashes": {
+            "md5": "249f78fdd22be27d530fa277543f6dae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/fmodapis/lowlevel/inc/fmod_common.h"
+          },
+          "hashes": {
+            "md5": "aa4aeab5168cc105e52151beaefa8c02"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/fmodapis/lowlevel/inc/fmod_codec.h"
+          },
+          "hashes": {
+            "md5": "8955f09dfa744c185ee2b58d44454579"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/fmodapis/lowlevel/inc/fmod_dsp.h"
+          },
+          "hashes": {
+            "md5": "799add54e01516d01e6aa55fef895f2d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/fmodapis/lowlevel/inc/fmod_dsp_effects.h"
+          },
+          "hashes": {
+            "md5": "92331076f59900e6158d4c5f95f460ac"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/fmodapis/lowlevel/inc/fmod_output.h"
+          },
+          "hashes": {
+            "md5": "c50d1ee2839f5eb58c286707325249e0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/fmodapis/studio/inc/fmod_studio.h"
+          },
+          "hashes": {
+            "md5": "891ce3738560ce38a166ff9a61559472"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/fmodapis/lowlevel/inc/fmod_errors.h"
+          },
+          "hashes": {
+            "md5": "89621e56f3bde1b0fb4c6c33b0c700a9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/audiocomponent.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "2a52156815099599b2ddb68b4ee9e0c3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/audiocomponent.h"
+          },
+          "hashes": {
+            "md5": "42142e115652ffc61ac9c1a74004499d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/SDL/rapidjson/include/rapidjson/internal/ieee754.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "6b782a2525ab8e138d285f23b9783d86"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/SDL/rapidjson/include/rapidjson/internal/biginteger.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "56e98144c5e979b41d23312d2b326c41"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/SDL/rapidjson/include/rapidjson/internal/diyfp.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "7c747d49e38d8dfffb8b8e1fcead42b8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/SDL/rapidjson/include/rapidjson/internal/strtod.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "3adcbcd1b3dc13889cc8d22b29a7af10"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/SDL/rapidjson/include/rapidjson/error/error.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "83d6ffa6b17cab4544a9779e736e06b2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/SDL/rapidjson/include/rapidjson/reader.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "3f49a41f3150ad20c82aeed960864715"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/SDL/rapidjson/include/rapidjson/document.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "05a21d886cfa762b70118d472477c9ee"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/assets.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "32342689bdd889fc4f43a13b73871aee"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/rapidjson/include/rapidjson/allocators.h"
+          },
+          "hashes": {
+            "md5": "d47e0fdc20f6c2c6ff005831ca67f473"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/rapidjson/include/rapidjson/rapidjson.h"
+          },
+          "hashes": {
+            "md5": "c938ce243cf2740c9730d4fb5344a8e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/rapidjson/include/rapidjson/stream.h"
+          },
+          "hashes": {
+            "md5": "a2efaecc044eabf82db3339dae519291"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/rapidjson/include/rapidjson/encodings.h"
+          },
+          "hashes": {
+            "md5": "b574857ffc1898d99b997bd1b9b7e6ff"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/rapidjson/include/rapidjson/encodedstream.h"
+          },
+          "hashes": {
+            "md5": "533fd58cea117cc2fcad3306d3b85be7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/rapidjson/include/rapidjson/memorystream.h"
+          },
+          "hashes": {
+            "md5": "e188b4d13cdb5e54aede1120b10c16ba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/rapidjson/include/rapidjson/internal/meta.h"
+          },
+          "hashes": {
+            "md5": "0201c6668aae8a997392a0531a0b8752"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/rapidjson/include/rapidjson/internal/stack.h"
+          },
+          "hashes": {
+            "md5": "4c1c5f9f8f800c4da80a4eacf27685ae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/rapidjson/include/rapidjson/internal/swap.h"
+          },
+          "hashes": {
+            "md5": "d594cbe9c94ff68fbcad3b2d30b8fca4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/rapidjson/include/rapidjson/internal/pow10.h"
+          },
+          "hashes": {
+            "md5": "b9d671e53f1508d18a1767283416d7bf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/rapidjson/include/rapidjson/internal/strfunc.h"
+          },
+          "hashes": {
+            "md5": "66d6299533177e69fc444b37ed6ce8db"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/animspritecomponent.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "e9bd57f795b6655a8932573e4df27d36"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/animspritecomponent.h"
+          },
+          "hashes": {
+            "md5": "ef8a545c3716a426f67b05f8924d7220"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/actor.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "6d2240eda940cbf98782fc4ed30137ce"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/window.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "a97f8bf09e7c81a17f912d2cf546d68d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/vertexarray.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "b00dd0bc95170c28e1a367b280ca2624"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/vector3.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "8cf6654f5c638e74b538d33fe558049a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/vector2.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "3c360e6da433a1aa1aaaa854ea2e8a27"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/timer.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "89e46fd33ff783ba7279465926a34afa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///G:/Cours/Progra/C++/003/SimpleEngine/SimpleEngine/SimpleEngine3DGame/Texture.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "eddc2bb34b8f1fcd0cf15acec47f6ca0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/sdl/sdl2_image-2.0.5/include/sdl_image.h"
+          },
+          "hashes": {
+            "md5": "0ccc93aad7f3bcda7016f9ac9dfab470"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/spritecomponent.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "541794bcda8ce46220a41d13856112b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///g:/cours/progra/c++/003/simpleengine/simpleengine/simpleengine3dgame/sphere.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "500654295d09dc998798ba306d7ca09b"
+          }
+        }
+      ]
+    }
+  ]
+}

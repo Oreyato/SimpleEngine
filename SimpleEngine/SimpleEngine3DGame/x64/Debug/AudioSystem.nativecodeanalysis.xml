@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>G:\Cours\Progra\C++\003\SimpleEngine\SDL\SDL2-2.0.12\include\</FILEPATH>
+      <FILENAME>SDL_rect.h</FILENAME>
+      <LINE>102</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'SDL_bool' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>SDL_PointInRect</FUNCTION>
+    <DECORATED>SDL_PointInRect</DECORATED>
+    <FUNCLINE>99</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>G:\Cours\Progra\C++\003\SimpleEngine\FmodApis\lowlevel\inc\</FILEPATH>
+      <FILENAME>fmod.hpp</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>269</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'FMOD_RESULT' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>FMOD::Memory_Initialize</FUNCTION>
+    <DECORATED>?Memory_Initialize@FMOD@@YA?AW4FMOD_RESULT@@PEAXHP6APEAXIIPEBD@ZP6APEAX0II1@ZP6AX0I1@ZI@Z</DECORATED>
+    <FUNCLINE>37</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>G:\Cours\Progra\C++\003\SimpleEngine\FmodApis\lowlevel\inc\</FILEPATH>
+      <FILENAME>fmod.hpp</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'FMOD_DEBUG_MODE' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>FMOD::Debug_Initialize</FUNCTION>
+    <DECORATED>?Debug_Initialize@FMOD@@YA?AW4FMOD_RESULT@@IW4FMOD_DEBUG_MODE@@P6A?AW42@IPEBDH11@Z1@Z</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>G:\Cours\Progra\C++\003\SimpleEngine\SimpleEngine\SimpleEngine3DGame\</FILEPATH>
+      <FILENAME>AudioSystem.cpp</FILENAME>
+      <LINE>251</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'FMOD_STUDIO_PLAYBACK_STATE' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>AudioSystem::update</FUNCTION>
+    <DECORATED>?update@AudioSystem@@QEAAXM@Z</DECORATED>
+    <FUNCLINE>243</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

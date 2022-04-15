@@ -173,9 +173,11 @@ void Game::update(float dt)
 	{
 		delete deadActor;
 	}
+
 	//^ Update actors ================================================
 	//v Update audio =================================================
 	audioSystem.update(dt);
+
 	//^ Update audio =================================================
 }
 
