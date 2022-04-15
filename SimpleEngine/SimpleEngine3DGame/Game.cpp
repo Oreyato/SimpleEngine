@@ -119,6 +119,11 @@ void Game::load()
 	AudioComponent* ac = new AudioComponent(soundSphere);
 	ac->playEvent("event:/FireLoop");
 
+	// Drastically reduces default volume
+	float volume = audioSystem.getBusVolume("bus:/");
+	volume = Maths::max(0.0f, volume - 0.9f);
+	audioSystem.setBusVolume("bus:/", volume);
+
 	// Start music
 	musicEvent = audioSystem.playEvent("event:/Music");
 
