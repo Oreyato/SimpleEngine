@@ -9,7 +9,7 @@ public:
 	Camera();
 
 	void updateActor(float deltaTime) override;
-	void actorInput(const Uint8* keys) override;
+	void actorInput(const struct InputState& inputState) override;
 
 	void setFootstepSurface(float value);
 

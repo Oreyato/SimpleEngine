@@ -13,17 +13,14 @@
     <ClCompile Include="MoveComponent.cpp">
       <Filter>Objects\Components</Filter>
     </ClCompile>
-    <ClCompile Include="Log.cpp">
-      <Filter>Maths+Logs</Filter>
-    </ClCompile>
     <ClCompile Include="Timer.cpp">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClCompile>
     <ClCompile Include="Vector2.cpp">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClCompile>
     <ClCompile Include="Random.cpp">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClCompile>
     <ClCompile Include="SpriteComponent.cpp">
       <Filter>Objects\Components</Filter>
@@ -35,7 +32,7 @@
       <Filter>Objects\Components</Filter>
     </ClCompile>
     <ClCompile Include="Rectangle.cpp">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClCompile>
     <ClCompile Include="InputComponent.cpp">
       <Filter>Objects\Components</Filter>
@@ -47,13 +44,13 @@
       <Filter>Render\Shaders</Filter>
     </ClCompile>
     <ClCompile Include="Vector3.cpp">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClCompile>
     <ClCompile Include="Matrix4.cpp">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClCompile>
     <ClCompile Include="Quaternion.cpp">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClCompile>
     <ClCompile Include="MeshComponent.cpp">
       <Filter>Objects\Components</Filter>
@@ -94,6 +91,15 @@
     <ClCompile Include="AudioComponent.cpp">
       <Filter>Objects\Components</Filter>
     </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardState.cpp">
+      <Filter>Utilities\Inputs</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>Utilities\Inputs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
@@ -107,20 +113,17 @@
     <ClInclude Include="MoveComponent.h">
       <Filter>Objects\Components</Filter>
     </ClInclude>
-    <ClInclude Include="Log.h">
-      <Filter>Maths+Logs</Filter>
-    </ClInclude>
     <ClInclude Include="Timer.h">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClInclude>
     <ClInclude Include="Vector2.h">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClInclude>
     <ClInclude Include="Maths.h">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClInclude>
     <ClInclude Include="Random.h">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClInclude>
     <ClInclude Include="SpriteComponent.h">
       <Filter>Objects\Components</Filter>
@@ -132,7 +135,7 @@
       <Filter>Objects\Components</Filter>
     </ClInclude>
     <ClInclude Include="Rectangle.h">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClInclude>
     <ClInclude Include="InputComponent.h">
       <Filter>Objects\Components</Filter>
@@ -144,13 +147,13 @@
       <Filter>Render\Shaders</Filter>
     </ClInclude>
     <ClInclude Include="Vector3.h">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClInclude>
     <ClInclude Include="Matrix4.h">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClInclude>
     <ClInclude Include="Quaternion.h">
-      <Filter>Maths+Logs</Filter>
+      <Filter>Utilities\Maths</Filter>
     </ClInclude>
     <ClInclude Include="MeshComponent.h">
       <Filter>Objects\Components</Filter>
@@ -197,11 +200,17 @@
     <ClInclude Include="AudioComponent.h">
       <Filter>Objects\Components</Filter>
     </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>Utilities\Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardState.h">
+      <Filter>Utilities\Inputs</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Maths+Logs">
-      <UniqueIdentifier>{4321da52-f239-4a2c-a972-ee87af87b207}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Render">
       <UniqueIdentifier>{51f3e958-5737-4018-ac84-b015e573ab72}</UniqueIdentifier>
     </Filter>
@@ -230,6 +239,15 @@
     </Filter>
     <Filter Include="Audio">
       <UniqueIdentifier>{31f3bed2-c341-4a22-8781-ac835060c990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{21aa5390-9afb-40ff-9204-606226348721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Maths">
+      <UniqueIdentifier>{4321da52-f239-4a2c-a972-ee87af87b207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Inputs">
+      <UniqueIdentifier>{0440d830-1fa5-42c7-980e-d958e97f2837}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

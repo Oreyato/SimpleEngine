@@ -17,7 +17,7 @@ public:
 	virtual void update(float dt);
 	virtual void onUpdateWorldTransform();
 
-	virtual void processInput(const Uint8* keyState);
+	virtual void processInput(const struct InputState& inputState);
 
 protected:
 	Actor& owner;

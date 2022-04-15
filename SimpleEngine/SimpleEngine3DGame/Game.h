@@ -7,6 +7,7 @@
 #include "RendererOGL.h"
 #include "Camera.h"
 #include "AudioSystem.h"
+#include "InputSystem.h"
 
 using std::vector;
 
@@ -39,6 +40,7 @@ public:
 
 	RendererOGL& getRenderer() { return renderer; }
 	AudioSystem& getAudioSystem() { return audioSystem; }
+	InputSystem& getInputSystem() { return inputSystem; }
 
 private:
 	void processInput();
@@ -58,4 +60,6 @@ private:
 	SoundEvent musicEvent;
 	SoundEvent reverbSnap;
 	void audioInput(int key);
+
+	InputSystem inputSystem;
 };
