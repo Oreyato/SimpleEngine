@@ -6,6 +6,7 @@
 #include "Cube.h"
 #include "Sphere.h"
 #include "Plane.h"
+#include "LevelBuilder.h"
 
 bool Game::initialize()
 {
@@ -36,6 +37,12 @@ void Game::load()
 	Assets::loadMesh("Res\\Meshes\\Sphere.gpmesh", "Mesh_Sphere");
 	
 	//^ Loads ========================================================
+	//v Create level =================================================
+	Vector3 testLevelOrigin{ -200.0f, -200.0f, 0.0f };
+	LevelBuilder testLevel = LevelBuilder("test", testLevelOrigin);
+	testLevel.buildLevel();
+
+	//^ Create level =================================================
 	//v Camera =======================================================
 	camera = new Camera();
 	
@@ -53,46 +60,6 @@ void Game::load()
 	b->setScale(3.0f);
 	
 	//^ Scene objects ================================================
-	//v Floor and walls ==============================================
-	// Setup floor
-	const float start = -1250.0f;
-	const float size = 250.0f;
-	for (int i = 0; i < 10; i++)
-	{
-		for (int j = 0; j < 10; j++)
-		{
-			Plane* p = new Plane();
-			p->setPosition(Vector3(start + i * size, start + j * size, -100.0f));
-		}
-	}
-
-	// Left/right walls
-	q = Quaternion(Vector3::unitX, Maths::piOver2);
-	for (int i = 0; i < 10; i++)
-	{
-		Plane* p = new Plane();
-		p->setPosition(Vector3(start + i * size, start - size, 0.0f));
-		p->setRotation(q);
-
-		p = new Plane();
-		p->setPosition(Vector3(start + i * size, -start + size, 0.0f));
-		p->setRotation(q);
-	}
-
-	q = Quaternion::concatenate(q, Quaternion(Vector3::unitZ, Maths::piOver2));
-	// Forward/back walls
-	for (int i = 0; i < 10; i++)
-	{
-		Plane* p = new Plane();
-		p->setPosition(Vector3(start - size, start + i * size, 0.0f));
-		p->setRotation(q);
-
-		p = new Plane();
-		p->setPosition(Vector3(-start + size, start + i * size, 0.0f));
-		p->setRotation(q);
-	}
-	
-	//^ Floor and walls ==============================================
 	//v Lights =======================================================
 	// Phong light
 	renderer.setAmbientLight(Vector3(0.2f, 0.2f, 0.2f));
@@ -117,7 +84,7 @@ void Game::load()
 	// Create spheres with audio components playing different sounds
 	Sphere* soundSphere = new Sphere();
 	soundSphere->setPosition(Vector3(500.0f, -75.0f, 0.0f));
-	soundSphere->setScale(1.0f);
+	soundSphere->setScale(0.01f);
 	AudioComponent* ac = new AudioComponent(soundSphere);
 	ac->playEvent("event:/FireLoop");
 
